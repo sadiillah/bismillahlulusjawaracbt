@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: 'Plus Jakarta Sans', 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Fallback styles in case Tailwind doesn't load */
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background: #F7F7F7;
+  font-family: 'Plus Jakarta Sans', 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-neutral-50 text-neutral-900 min-h-screen;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply text-neutral-900;
+  }
+}
+
+@layer components {
+  /* Brand Typography */
+  .text-brand-dark {
+    color: #0C1C3C;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+
+  .text-brand-white {
+    color: #FFFFFF;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+
+  .text-brand-light {
+    color: #6B7280;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+
+  /* Brand Gradient */
+  .blue-gradient {
+    background: #EF3F09;
+  }
+
+  /* Button Styles */
+  .btn-secondary {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .blue-btn-shadow {
+    box-shadow: none;
+  }
+
+  /* Navigation Styles */
+  .nav-link {
+    display: flex;
+    padding: 14px 20px;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+    background: transparent;
+  }
+
+  .nav-link-active {
+    display: flex;
+    padding: 14px 20px;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+    background: #276874;
+  }
+
+  .nav-link-active:hover {
+    background: #276874 !important;
+  }
+
+  /* Section headers */
+  .section-title {
+    color: #0C1C3C;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 16px;
+    padding-left: 12px;
+  }
+
+  /* Badge styles */
+  .badge-expert {
+    background-color: #D8B0FF;
+    color: #3A0962;
+  }
+
+  .badge-intermediate {
+    background-color: #D8B0FF;
+    color: #3A0962;
+  }
+
+  .badge-beginner {
+    background-color: #D8B0FF;
+    color: #3A0962;
+  }
+
+  .badge-active {
+    background-color: #EBF8FF;
+    color: #1E40AF;
+  }
+
+  .text-success {
+    color: #059669;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+
+  .text-danger {
+    color: #DC2626;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+
+  /* Card backgrounds for stats */
+  .icon-bg-green {
+    background-color: #C5E151;
+  }
+
+  .icon-bg-blue {
+    background-color: #82D9D7;
+  }
+
+  .icon-bg-orange {
+    background-color: #FAAC7B;
+  }
+
+  .btn-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+  }
+}
